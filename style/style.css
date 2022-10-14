@@ -2,6 +2,20 @@ body {
   background-color: teal;
 }
 
-h1 {
-  font-family: monospace;
+/* General draft */
+a {
+  color: chocolate;
+  font-size: xx-large;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: black;
+  background-color: burlywood;
+}
+
+.box {
+  border: chocolate;
 }
