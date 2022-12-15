@@ -10,31 +10,3 @@ html {
 
 * {
 }
-
-body {
-  width: 100vw;
-  height: 300vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.box {
-  width: 900px;
-  height: 600px;
-  background-color: lightcyan;
-  outline: 4px solid green;
-  background-color: hotpink;
-}
-
-.box {
-  background-image: url(../images/Ellipse.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-attachment: fixed;
-}
-
-.text {
-  font-size: 3em;
-}
