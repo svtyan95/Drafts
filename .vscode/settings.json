@@ -3,12 +3,12 @@
     {
       "format": "expanded",
       "extensionName": ".css",
-      "savePath": "/css"
+      "savePath": "/Users/stevetymchyna/Desktop/Private/WEB 2022/Drafts/css"
     },
     {
       "extensionName": ".min.css",
       "format": "compressed",
-      "savePath": "/css"
+      "savePath": "/Users/stevetymchyna/Desktop/Private/WEB 2022/Drafts/css"
     }
   ],
   "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
