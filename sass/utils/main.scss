@@ -1,10 +1,9 @@
 // #1 utils styles
-@import "./utils/_variables.scss";
-@import "./utils/v-hidden";
 
 // #2 base styles
-@import "./base/_base.scss";
-@import "./base/_reset.scss";
+@import "../base/base;";
+@import "../base/reset";
 
 // #3 components styles
 @import "../components/container";
+@import "../components/product";
