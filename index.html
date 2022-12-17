@@ -11,36 +11,41 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Seymour+One&display=swap" rel="stylesheet">
+
 
 </head>
 
 <body>
 
     <!-- section product -->
-    <section class="main__product">
+    <section class="product">
         <div class="container">
-            <h3>100% natural</h3>
-            <h2>products</h2>
-            <ul>
-                <li>
-                    <img src="" alt="">
+            <h3 class="product__sub_title">100% natural</h3>
+            <h2 class="product__title">products</h2>
+            <ul class="product__list">
+                <li class="product__items">
+                    <img class="product__img" src="./images/mobile/icecream.png" alt="">
 
-                    <!-- it will be elipse -->
-                    <span></span>
+                    <span class="one"></span>
+
                     <div>
                         <h4>ice cream</h4>
                         <p>Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer
                         </p>
-                        <svg>
-                            <use href="">
+                        <svg class="product__arrow-icon" width="40" height="16">
+                            <use href="./images/sprite.svg#icon-arrow-products">
                             </use>
                         </svg>
                     </div>
                 </li>
 
-                <li>
+                <li class="product__items">
                     <img src="" alt="">
 
                     <!-- it will be elipse -->
@@ -49,14 +54,14 @@
                         <h4>ice cream</h4>
                         <p>Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer
                         </p>
-                        <svg>
-                            <use href="">
+                        <svg width="40" height="16">
+                            <use href="./images/sprite.svg#icon-arrow-products">
                             </use>
                         </svg>
                     </div>
 
                 </li>
-                <li>
+                <li class="product__items">
                     <img src="" alt="">
 
                     <!-- it will be elipse -->
@@ -65,8 +70,8 @@
                         <h4>ice cream</h4>
                         <p>Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer
                         </p>
-                        <svg>
-                            <use href="">
+                        <svg width="40" height="16">
+                            <use href="./images/sprite.svg#icon-arrow-products">
                             </use>
                         </svg>
                     </div>
