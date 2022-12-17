@@ -83,18 +83,22 @@ button {
 .product {
   background-image: url(../../images/mobile/885_mobile_bg.jpg);
   height: 1242px;
-  background-size: cover;
+  content: "";
+  min-height: 1800px;
 }
 
 @media screen and (min-width: 768px) {
   .product {
     background-image: url(../../images/tablet/916_tablet_bg.jpg);
+    height: 1590px;
+    background-size: cover;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .product {
     background-image: url(../../images/desctop/1300_desctop_bg.jpg);
+    background-size: cover;
   }
 }
 
@@ -142,6 +146,19 @@ button {
           align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .product__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 16px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .product__items {
   position: relative;
   width: 280px;
@@ -149,6 +166,20 @@ button {
   background-color: #aec6a5;
   border-radius: 24px;
   gap: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .product__items {
+    width: 224px;
+    height: 428px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product__items {
+    width: 380px;
+    height: 719px;
+  }
 }
 
 .product__img {
@@ -162,6 +193,13 @@ button {
   overflow: hidden;
   top: -11px;
   left: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .product__img {
+    width: 302px;
+    height: 302px;
+  }
 }
 
 .thumb-cardset {
@@ -184,14 +222,38 @@ button {
   border-radius: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .thumb-cardset {
+    left: 13px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .thumb-cardset {
+    width: 302px;
+    height: 302px;
+    left: 38px;
+  }
+}
+
 .product__text {
   margin-top: 123px;
 }
 
+@media screen and (min-width: 768px) {
+  .product__text {
+    margin-top: 123px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product__text {
+    margin-top: 300px;
+  }
+}
+
 .pr__text-title {
   text-align: center;
-  padding-left: 78px;
-  padding-right: 78px;
   margin-bottom: 40px;
   font-family: "Montserrat";
   font-weight: 700;
@@ -203,6 +265,16 @@ button {
   color: #131313;
 }
 
+@media screen and (min-width: 1200px) {
+  .pr__text-title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
 .pr__text-desc {
   text-align: center;
   padding-left: 40px;
@@ -212,15 +284,71 @@ button {
   font-weight: 400;
   font-size: 14px;
   line-height: 176%;
-  /* or 25px */
   text-align: center;
   letter-spacing: 0.04em;
   color: #131313;
 }
 
+@media screen and (min-width: 1200px) {
+  .pr__text-desc {
+    font-size: 16px;
+  }
+}
+
 .product__arrow-icon {
-  display: block;
-  padding-left: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.arrow-margin-one {
   margin-top: 101px;
+}
+
+@media screen and (min-width: 768px) {
+  .arrow-margin-one {
+    margin-top: 61px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .arrow-margin-one {
+    margin-top: 195px;
+  }
+}
+
+.arrow-margin-two {
+  margin-top: 53px;
+}
+
+@media screen and (min-width: 768px) {
+  .arrow-margin-two {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .arrow-margin-two {
+    margin-top: 170px;
+  }
+}
+
+.arrow-margin-three {
+  margin-top: 53px;
+}
+
+@media screen and (min-width: 768px) {
+  .arrow-margin-three {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .arrow-margin-three {
+    margin-top: 170px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
