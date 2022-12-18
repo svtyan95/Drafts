@@ -189,35 +189,35 @@ $title-text-color: #131313;
 }
 
 .arrow-margin-one {
-  margin-top: 101px;
+  margin-bottom: 101px;
 
   @media screen and (min-width: 768px) {
-    margin-top: 61px;
+    margin-bottom: 61px;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-top: 195px;
+    margin-bottom: 195px;
   }
 }
 
 .arrow-margin-two {
-  margin-top: 53px;
+  margin-bottom: 53px;
 
   @media screen and (min-width: 768px) {
-    margin-top: 15px;
+    margin-bottom: 15px;
   }
   @media screen and (min-width: 1200px) {
-    margin-top: 170px;
+    margin-bottom: 170px;
   }
 }
 
 .arrow-margin-three {
-  margin-top: 53px;
+  margin-bottom: 53px;
   @media screen and (min-width: 768px) {
-    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-top: 170px;
+    margin-bottom: 170px;
   }
 }
