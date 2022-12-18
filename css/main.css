@@ -380,13 +380,19 @@ button {
   position: absolute;
   background: #fcfcfc;
   width: 280px;
-  height: 968px;
-  top: 60%;
+  height: 900px;
+  top: 44%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border: 2px solid #f8d24e;
   border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 568px;
+  }
 }
 
 .product__img-modal {
@@ -421,6 +427,12 @@ button {
   border-radius: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .thumb-modal {
+    left: 39%;
+  }
+}
+
 .modal__title {
   font-family: "Seymour One";
   font-style: normal;
@@ -435,6 +447,12 @@ button {
   margin-top: 28px;
 }
 
+@media screen and (min-width: 768px) {
+  .modal__title {
+    font-size: 28px;
+  }
+}
+
 .modal__close {
   background-color: transparent;
   border: transparent;
@@ -443,18 +461,266 @@ button {
   left: 230px;
 }
 
+@media screen and (min-width: 768px) {
+  .modal__close {
+    left: 519px;
+  }
+}
+
 .modal__icon {
   width: 20px;
   height: 20px;
 }
 
-.modal__text {
+.nutritior__list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 191px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 9px;
+}
+
+@media screen and (min-width: 768px) {
+  .nutritior__list {
+    margin-top: 215px;
+    gap: 20px;
+  }
+}
+
+.nutrition__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.items-number {
+  width: 43px;
+  height: 43px;
+  background: #9cbe8f;
+  border: 2px solid #9cbe8f;
+  -webkit-box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+          box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+  border-radius: 120%;
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #131313;
+  border: 2px solid #9cbe8f;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 5px;
+}
+
+.items-text {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 53px;
+  height: 72px;
+  text-align: center;
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #131313;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 7px;
+}
+
+.modal__text-ingredients {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #131313;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal__text-ingredients {
+    margin-top: 60px;
+  }
+}
+
+.ingredients__list {
+  margin-top: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .ingredients__list {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.ingredients__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ingredients-text,
+.ingredients-numbers {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 176%;
+  /* identical to box height, or 25px */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #131313;
+}
+
+.modal-form {
+  margin-top: 40px;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-input {
+  width: 235px;
+  height: 42px;
+  padding: 11px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .form-input {
+    width: 368px;
+  }
+}
+
+.btn-sumbit-modal {
+  margin-top: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 200px;
+  width: 132px;
+  height: 42px;
+  background: #f8d24e;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #131313;
+  border-color: transparent;
+}
+
+.fi-comment {
+  height: 84px;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .fi-comment {
+    width: 368px;
+  }
+}
+
+.fi-comment::-webkit-input-placeholder {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.fi-comment:-ms-input-placeholder {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.fi-comment::-ms-input-placeholder {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.fi-comment::placeholder {
+  position: absolute;
+  left: 10px;
+  top: 10px;
 }
 /*# sourceMappingURL=main.css.map */
